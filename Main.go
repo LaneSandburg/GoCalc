@@ -32,7 +32,7 @@ func main() {
 		}
 
 		//strip whitespace
-		fmtequ := strings.ReplaceAll(equation, " ", "")
+		fmtequ := stripWhiteSpace(equation)
 
 		//send values to array
 		var eqArray []string
@@ -50,7 +50,10 @@ func main() {
 	}
 
 }
-
+func stripWhiteSpace(input string) string {
+	input1 := strings.ReplaceAll(input, " ", "")
+	return input1
+}
 func solveEquation(operator string, a int, b int) {
 
 	switch operator {
