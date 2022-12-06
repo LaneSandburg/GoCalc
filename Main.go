@@ -92,6 +92,7 @@ func getVariables(eqArray []string) {
 					value2 += string(value)
 				}
 			}
+			break
 		}
 
 	}
